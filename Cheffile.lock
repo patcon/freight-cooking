@@ -1,0 +1,10 @@
+GIT
+  remote: git@github.com:myplanetdigital/chef-freight.git
+  ref: master
+  sha: b7291aa662861bff5c992714ed90f0e9a6c9f6c1
+  specs:
+    freight (0.0.1)
+
+DEPENDENCIES
+  freight (>= 0)
+

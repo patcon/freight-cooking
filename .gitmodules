@@ -1,0 +1,3 @@
+[submodule "cookbooks-sources/freight"]
+	path = cookbooks-sources/freight
+	url = git@github.com:myplanetdigital/chef-freight.git
