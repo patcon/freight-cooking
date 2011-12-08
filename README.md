@@ -36,7 +36,7 @@ Usage
     $ git fork patcon/freight-cooking               # Forks this dev repo
     $ git clone -p freight-cooking                  # Clones your new dev repo via SSH
     $ cd freight-cooking
-    $ sed -ie 's/yourusername/patcon/g' .gitmodules # Points submodules to your cookbook repo
+    $ sed -ie 's/patcon/yourusername/g' .gitmodules # Points submodules to your cookbook repo
     $ git submodule init && git submodule update    # Pulls in outside submodules (yours)
     $ librarian-chef install                        # Installs cookbooks from Cheffile.lock
     $ vagrant up                                    # Spins up VM according to this repo
