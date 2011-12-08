@@ -2,7 +2,13 @@
 
 site 'http://community.opscode.com/api/v1'
 
+# Personal
+cookbook 'vim'
+
+# Dependencies
 cookbook 'apt'
+cookbook 'gpg'
+cookbook 'apache2'
 
 cookbook 'freight',
   :path => 'cookbooks-sources'

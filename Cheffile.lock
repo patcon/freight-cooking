@@ -1,7 +1,14 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
+    apache2 (1.0.2)
     apt (1.2.0)
+    chef_handler (1.0.4)
+    gpg (0.0.1)
+      minitest (>= 0.0.0)
+    minitest (0.1.5)
+      chef_handler (~> 1.0.4)
+    vim (1.0.2)
 
 PATH
   remote: cookbooks-sources
@@ -9,6 +16,9 @@ PATH
     freight (0.0.1)
 
 DEPENDENCIES
+  apache2 (>= 0)
   apt (>= 0)
   freight (>= 0)
+  gpg (>= 0)
+  vim (>= 0)
 
