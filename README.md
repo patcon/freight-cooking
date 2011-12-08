@@ -11,7 +11,7 @@ This repo is intended to help provide a common development context for anyone wi
 Requirements
 ============
 
-Tools that this project was created in mind with. (My current verions are specified for transparency, but you can omit that to simply get the most recent ones.)
+Tools that this project was created in mind with. (My current versions are specified for transparency, but you can omit those to simply get the most recent ones.)
 
 I do all my development on OSX, but any *nix system should be smooth sailing. Windows may be... unsmooth... like waterfalls and schooner-devouring whirlpools. And probably laser-sharks.
 
@@ -24,20 +24,21 @@ Recommended: [Chef](https://github.com/opscode/chef) (for knife command-line too
 
     $ sudo gem install chef         -v 0.10.4
     $ sudo gem install vagrant-snap -v 0.09
-
-    $ sudo curl http://defunkt.io/hub/standalone -sLo /smthng/on/PATH/hub && sudo chmod 755 /smthng/on/PATH/hub
+ 
+    $ sudo curl http://defunkt.io/hub/standalone -sLo /smthng/on/PATH/hub
+    $ sudo chmod 755 /smthng/on/PATH/hub
     $ alias git=hub
 
 Usage
 =====
 
-    $ git fork patcon/chef-freight    # Forks my cookbook repo to your Github account
-    $ git fork patcon/freight-cooking # Forks this dev repo to your Github account
-    $ git clone -p freight-cooking    # Clones your new dev repo via SSH
+    $ git fork patcon/chef-freight                  # Forks my cookbook repo (to your Github)
+    $ git fork patcon/freight-cooking               # Forks this dev repo
+    $ git clone -p freight-cooking                  # Clones your new dev repo via SSH
     $ cd freight-cooking
-    $ sed -ie 's/yourusername/patcon/g' .gitmodules # Points submodule to your cookbook repo
+    $ sed -ie 's/yourusername/patcon/g' .gitmodules # Points submodules to your cookbook repo
     $ git submodule init && git submodule update    # Pulls in outside submodules (yours)
-    $ librarian-chef install          # Installs cookbooks specified in Cheffile.lock
-    $ vagrant up
-    $ vagrant ssh_config >> ~/.ssh/config
-    $ ssh freight-cooking
+    $ librarian-chef install                        # Installs cookbooks from Cheffile.lock
+    $ vagrant up                                    # Spins up VM according to this repo
+    $ vagrant ssh_config >> ~/.ssh/config 
+    $ ssh freight-cooking                           # SSH into your new box
