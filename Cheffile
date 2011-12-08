@@ -11,4 +11,4 @@ cookbook 'gpg'
 cookbook 'apache2'
 
 cookbook 'freight',
-  :path => 'cookbooks-sources'
+  :path => 'cookbooks-in-progress'
