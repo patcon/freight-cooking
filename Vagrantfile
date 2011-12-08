@@ -7,7 +7,7 @@ Vagrant::Config.run do |config|
   config.vm.forward_port "web", 80, 8080
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = "cookbooks"
+    chef.cookbooks_path = [ "cookbooks", "cookbooks-in-progress"]
     chef.add_recipe "freight"
     chef.add_recipe "vim"
  
