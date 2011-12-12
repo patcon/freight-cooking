@@ -8,6 +8,11 @@ This repo is intended to help provide a common development context for anyone wi
  * We each spend time setting up a dev environment for developing each cookbook. We should share.
  * We shouldn't need to laboriously explain context on quirky behaviour (unless it's an explanation of why we've arrived at work with no pants). We should be able to say "Spin up my environment at commit af2c21e2a2 and run `sudo toomanyclowns -v` and check out the errors. Any idea what's causing that?"
 
+# Recommended Conventions
+
+ * `metadata.json` is generated dynamically from `metadata.rb`, and so
+   should be in the `.gitignore`
+
 Requirements
 ============
 
